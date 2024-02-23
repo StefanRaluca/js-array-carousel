@@ -20,7 +20,9 @@ console.log(imgCarousel, activeImg, carousel);
 for (let i = 0; i < imgCarousel.length; i++) {
     const elementCarousel = imgCarousel[i];
     console.log(elementCarousel);
-
-    const markupCarousel = `<img class="${i === activeImg ? 'active' : ''}" src="assets/img/${elementCarousel}" ></img>`
+//selezioniamo il markup e facciamo una condizione per che la classe sia assegnata 
+    const markupCarousel = `<img class="${i === activeImg ? 'active' : ''}" src="${elementCarousel}" ></img>`
     console.log(markupCarousel);
+
+    carousel.insertAdjacentHTML('beforeend', markupCarousel)
 }

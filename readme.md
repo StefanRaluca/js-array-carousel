@@ -6,9 +6,19 @@
 
   - facciamo un div con clase carousel e poi dentro mettiamo le img 
   - stile in css al container e alle img 
+  - faccio vedere solo img con la classe active e metto display none ad le altre
 
  ## Step 2
   Adesso rimuoviamo tutto il markup statico e inseriamo tutte le immagini dinamicamente servendoci dell'array fornito e un semplice ciclo for che concatena un template literal. Tutte le immagini saranno nascoste, tranne la prima, che avrà una classe specifica che la renderà visibile. Al termine di questa fase ci ritroveremo con lo stesso slider stilato nella milestone 1, ma costruito dinamicamente attraverso JavaScript.
+  - const per img con array
+  - generare le img dentro il carousel
+  - far funzionare i button (up and down)
+
+  ## Tools
+  - const/let
+  - querryselector
+  - loop
+  - addEventListener
  ## Step 3
 
  Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente.

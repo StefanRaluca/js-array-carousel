@@ -42,13 +42,19 @@ upButton.addEventListener('click', function () {
     activeImg++
     console.log(activeImg);
 
+    //condizione per girare le img 
+    if (activeImg > imgCarousel.length -1) {
+        activeImg = 0;
+        
+    }
+
     const currentImg = document.querySelector('.active');
 
     // Rimuovi la classe 'active' dall'immagine corrente
     currentImg.classList.remove('active');
-
+// facciamo una const con la selezione dei img 
     const allImg = document.querySelectorAll('.carousel_img img');
-    
+   // add classe active alla img generata dal array 
     allImg[activeImg].classList.add('active');
 });
 
@@ -56,13 +62,17 @@ downButton.addEventListener('click', function () {
     console.log('down button');
     activeImg--
     console.log(activeImg);
-
+    //condizione per girare le img senza bug
+    if (activeImg < 0) {
+        activeImg = imgCarousel.length - 1;
+        
+    }
     const currentImg = document.querySelector('.active');
 
     // Rimuovi la classe 'active' dall'immagine corrente
     currentImg.classList.remove('active');
 
     const allImg = document.querySelectorAll('.carousel_img img');
-    
+    // fai classe active alla img generata dal array 
     allImg[activeImg].classList.add('active');
 });

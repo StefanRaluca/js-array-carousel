@@ -6,7 +6,7 @@
 
 
 .container_carousel {
-    width: 80%;
+    width: 65%;
     margin: auto;
     position: relative;
     padding-top: 40px;
@@ -20,11 +20,9 @@
 
 .carousel_img img {
     width: 100%;
-    max-width: 600px;
-    height: auto; 
     display: none;
-
-    
+    height: 100%;
+    object-fit: cover;
 }
 
 .top_button,
